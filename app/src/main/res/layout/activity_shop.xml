@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shop">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="28dp"
+        android:text="Item Name" />
+
+    <EditText
+        android:id="@+id/etOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="44dp"
+        android:ems="10"
+        android:hint="Type item name"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="doOrder"
+        android:layout_marginStart="59dp"
+        android:layout_marginBottom="77dp"
+        android:text="Order" />
+
+    <Button
+        android:id="@+id/btnFindstore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etOrder"
+        android:layout_alignBottom="@+id/btnOrder"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="87dp"
+        android:onClick="showLocation"
+        android:text="Find baqala" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etOrder"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:onClick="doCLEAR"
+        android:text="Clear" />
+
+</RelativeLayout>
